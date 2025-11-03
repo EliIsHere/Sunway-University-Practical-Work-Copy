@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Window3Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="214.0" layoutY="32.0" text="Student Listing">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="41.0" layoutY="80.0" prefHeight="287.0" prefWidth="518.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tvStudent" layoutY="-1.0" prefHeight="302.0" prefWidth="518.0">
+                    <columns>
+                      <TableColumn fx:id="tcNo" prefWidth="75.0" text="No." />
+                      <TableColumn fx:id="tcName" prefWidth="244.8000030517578" text="Name" />
+                        <TableColumn fx:id="tcAge" prefWidth="88.0" text="Age" />
+                        <TableColumn fx:id="tcGender" prefWidth="109.5999755859375" text="Gender" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
